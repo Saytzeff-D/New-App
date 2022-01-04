@@ -1,0 +1,10 @@
+<div>
+  <form [formGroup]="userInfo" (ngSubmit)="submitForm()">
+    <input formControlName="name" type="text" placeholder="Name">
+    <input formControlName="email" type="email" placeholder="Email Address">
+    <input formControlName="phoneNum" type="text" placeholder="Phone Number">
+    <input formControlName="pword" type="password" placeholder="Password">
+    <button type="submit">Submit</button>
+  </form>
+  <button (click)="viewUsers()">View Users</button>
+</div>
